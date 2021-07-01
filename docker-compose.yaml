@@ -1,6 +1,6 @@
 version: "3.0"
 services:
-  Serviceone: # name of the service
+  serviceone: # name of the service
     container_name: paitentserv # the container name in which the image will be loaded
     ports:  # port from local mapped with the container 
         - 9001:80
