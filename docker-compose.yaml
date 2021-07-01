@@ -1,18 +1,18 @@
-version: "3.0"
-services:
-  serviceone: # name of the service
-    container_name: paitentserv # the container name in which the image will be loaded
-    ports:  # port from local mapped with the container 
-        - 9001:80
-    build: serviceone     # the folder from where the the dockerfile is read
-  #hello
-  servicetwo:
-    container_name: doctorserv
-    ports: 
-        - 9002:80
-    build: servicetwo
-  clientapp:
-    container_name: clienthost
-    ports: 
-        - 9003:80
-    build: clientapp
+  version: "3.0"
+  services:
+    serviceone: # name of the service
+      container_name: paitentserv # the container name in which the image will be loaded
+      ports:  # port from local mapped with the container 
+          - 6001:80
+      build: serviceone     # the folder from where the the dockerfile is read
+    #hello
+    servicetwo:
+      container_name: doctorserv
+      ports: 
+          - 6002:80
+      build: servicetwo
+    clientapp:
+      container_name: clienthost
+      ports: 
+          - 6003:80
+      build: clientapp
