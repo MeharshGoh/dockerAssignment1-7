@@ -22,11 +22,11 @@ namespace ClientApp.Controllers
         public async Task<IActionResult> Index()
         {
              HttpClient client = new HttpClient();
-            var result1 = await client.GetStringAsync("http://servhost/api/WeatherForecast");
+            var result1 = await client.GetStringAsync("http://paitentserv/api/WeatherForecast");
 
             ViewBag.Response = result1;
 
-             var result2 = await client.GetStringAsync("http://servhost/api/WeatherForecast");
+             var result2 = await client.GetStringAsync("http://doctorserv/api/WeatherForecast");
 
             ViewBag.Response = result2;
             return View();
